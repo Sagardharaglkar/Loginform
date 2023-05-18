@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="validation.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="container">
+            <label for="show" class="close-btn fas fa-times" title="close"></label>
+
+            <div class="text">SignUp Now</div>
+            <form name="myForm" onsubmit="return validateForm()" method="POST" action="Signup.php">
+                <div class="data">
+                    <label></label>
+                    <input type="text" placeholder="Name" name="fname">
+                </div>
+                <div class="data">
+                    <input type="text" placeholder="Email" name="email">
+                </div>
+                <div class="data">
+                    <input type="tel" placeholder="Contact" name="Cont">
+                </div>
+                <div class="data">
+                    <input type="password" placeholder="Password" name="pwd" id="myInput">
+                </div>
+                <div class="data">
+                    <input type="password" placeholder="Re-Type Password" name="pwd2" id="myInput2">
+                </div>
+                <div class="check">
+                    <input type="checkbox" onclick="myFunction()">Show Password
+                </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit">Create Account</button>
+                </div>
+                <p id="ans"></p>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
